@@ -48,7 +48,7 @@ func buildRouter() throws -> Router<AppRequestContext> {
     }
     // Add default endpoint
     router.get("/") { _,_ in
-        return "Hello!"
+        return "Altheman is not here!"
     }
     return router
 }
