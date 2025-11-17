@@ -1,0 +1,24 @@
+<div class="window" style="width: 100%;">
+    <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">Get in Touch</h1>
+        <button aria-label="Resize" class="resize"></button>
+    </div>
+    <div class="separator"></div>
+    <div class="window-pane">
+        <p style="margin-bottom: 1.5rem;">Feel free to reach out through any of the following channels:</p>
+
+        {{#contacts}}
+        <section class="field-row" style="display: block; margin-bottom: 1rem;">
+            <label><strong>{{type}}:</strong></label>
+            <p style="margin-left: 1rem;">{{value}}</p>
+        </section>
+        {{/contacts}}
+
+        <div class="separator" style="margin: 1.5rem 0;"></div>
+
+        <div class="modeless-dialog">
+            <p style="text-align: center; font-size: 9px;">{{footer_message}}</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="window" style="width: 100%;">
+    <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">About {{name}}</h1>
+        <button aria-label="Resize" class="resize"></button>
+    </div>
+    <div class="separator"></div>
+    <div class="window-pane">
+        <section class="field-row" style="display: block; margin-bottom: 1.5rem;">
+            <p>{{bio}}</p>
+        </section>
+
+        <div class="separator" style="margin: 1rem 0;"></div>
+
+        <h3>Skills & Technologies</h3>
+        <div style="margin-top: 1rem;">
+            {{#skills}}
+            <div class="field-row" style="display: block; margin: 0.5rem 0;">
+                <label>▪ {{.}}</label>
+            </div>
+            {{/skills}}
+        </div>
+    </div>
+</div>

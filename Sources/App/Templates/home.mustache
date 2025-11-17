@@ -1,0 +1,21 @@
+<div class="window" style="width: 100%;">
+    <div class="title-bar">
+        <button aria-label="Close" class="close"></button>
+        <h1 class="title">{{greeting}}</h1>
+        <button aria-label="Resize" class="resize"></button>
+    </div>
+    <div class="separator"></div>
+    <div class="window-pane">
+        <h2>{{message}}</h2>
+        <p style="margin: 1rem 0;">Welcome to my site! This site is built with Hummingbird and Mustache templating, styled with system.css for that classic Mac OS look.</p>
+
+        <div class="separator" style="margin: 1rem 0;"></div>
+
+        <h3>Features</h3>
+        {{#features}}
+        <div class="field-row" style="display: block; margin: 0.5rem 0;">
+            <strong>{{name}}:</strong> {{description}}
+        </div>
+        {{/features}}
+    </div>
+</div>
