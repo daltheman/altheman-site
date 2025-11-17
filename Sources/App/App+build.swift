@@ -102,12 +102,11 @@ func buildRouter() throws -> Router<AppRequestContext> {
     // Home page
     router.get("/") { request, context in
         let homeData: [String: Any] = [
-            "greeting": "Welcome!",
-            "message": "Altheman is here!",
+            "greeting": "/dev/disk1s1",
+            "message": "Altheman's OS System 25.0",
             "features": [
                 ["name": "Swift Powered", "description": "Built with Swift and Hummingbird framework"],
-                ["name": "Mustache Templates", "description": "Dynamic HTML rendering with Mustache"],
-                ["name": "Modern Design", "description": "Clean and responsive user interface"]
+                ["name": "Mustache Templates", "description": "Dynamic HTML rendering with Mustache"]
             ]
         ]
 
